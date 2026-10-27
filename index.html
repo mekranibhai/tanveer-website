@@ -1,0 +1,249 @@
+<!doctype html>
+<html lang="hi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Tanveer | Meri Website</title>
+
+  <style>
+    * { box-sizing: border-box; }
+
+    body {
+      width: min(960px, 92%);
+      margin: 28px auto;
+      padding: 0;
+      color: #f7f5ff;
+      font-family: Arial, sans-serif;
+      background: #101126;
+      background-image:
+        radial-gradient(ellipse at 15% 10%, #38316f, transparent 42%),
+        radial-gradient(ellipse at 90% 85%, #123c52, transparent 38%);
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 8px 0 32px;
+    }
+
+    .brand {
+      font-weight: bold;
+      letter-spacing: 2px;
+    }
+
+    .brand span,
+    .eyebrow {
+      color: #b3aaff;
+    }
+
+    .hero {
+      display: grid;
+      grid-template-columns: 1.25fr .75fr;
+      align-items: center;
+      gap: 32px;
+      padding: 48px;
+      border: 1px solid #ffffff33;
+      border-radius: 28px;
+      background: #ffffff12;
+    }
+
+    h1 {
+      margin: 12px 0;
+      font-size: clamp(40px, 8vw, 68px);
+    }
+
+    .intro {
+      color: #cbc9dc;
+      line-height: 1.7;
+    }
+
+    .button,
+    .contact-menu summary {
+      display: inline-block;
+      margin: 8px 8px 0 0;
+      padding: 12px 18px;
+      border: 1px solid #ffffff35;
+      border-radius: 12px;
+      color: white;
+      text-decoration: none;
+      cursor: pointer;
+    }
+
+    .primary,
+    .contact-menu summary {
+      color: #17132d;
+      background: #b4a9ff;
+      font-weight: bold;
+    }
+
+    .profile-art {
+      display: grid;
+      place-items: center;
+      width: 200px;
+      height: 200px;
+      margin: auto;
+      border-radius: 50%;
+      background: linear-gradient(145deg, #8070ec, #44c1bd);
+    }
+
+    .profile-art span {
+      font-size: 100px;
+      font-weight: bold;
+    }
+
+    .contact-menu {
+      margin-top: 22px;
+    }
+
+    .contact-menu summary {
+      list-style: none;
+    }
+
+    .contact-menu summary::-webkit-details-marker {
+      display: none;
+    }
+
+    .contact-options {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 12px;
+    }
+
+    .contact-options a,
+    .social-card {
+      padding: 14px;
+      border: 1px solid #ffffff35;
+      border-radius: 12px;
+      color: white;
+      text-decoration: none;
+    }
+
+    .section-title {
+      margin: 32px 0 14px;
+    }
+
+    .socials {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 12px;
+    }
+
+    .social-card {
+      background: #ffffff0c;
+    }
+
+    .social-card strong,
+    .social-card span {
+      display: block;
+    }
+
+    .social-card span {
+      margin-top: 6px;
+      color: #bcb9d1;
+      font-size: 14px;
+    }
+
+    footer {
+      padding: 24px 0;
+      color: #aaa7bd;
+      font-size: 13px;
+      text-align: center;
+    }
+
+    @media (max-width: 650px) {
+      .hero {
+        grid-template-columns: 1fr;
+        padding: 26px;
+      }
+
+      .profile-art {
+        grid-row: 1;
+        width: 140px;
+        height: 140px;
+      }
+
+      .profile-art span {
+        font-size: 72px;
+      }
+
+      .socials {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <div class="brand">TANVEER<span>.</span></div>
+    <div>Meri personal website</div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div>
+        <p class="eyebrow">Namaste, duniya!</p>
+        <h1>Main Tanveer hoon.</h1>
+        <p class="intro">
+          Meri chhoti si website par aapka swagat hai.
+          Yahan aap mere social media links dekh sakte hain.
+        </p>
+
+        <a class="button primary"
+           href="https://www.instagram.com/tanveer_mekrani__"
+           target="_blank" rel="noopener noreferrer">
+          Instagram dekhein ↗
+        </a>
+
+        <a class="button"
+           href="https://x.com/TanveerMekrani1"
+           target="_blank" rel="noopener noreferrer">
+          X par milen ↗
+        </a>
+
+        <details class="contact-menu">
+          <summary>Message karne ke options</summary>
+          <div class="contact-options">
+            <a href="https://wa.me/919608601957"
+               target="_blank" rel="noopener noreferrer">
+              WhatsApp par message ↗
+            </a>
+            <a href="https://www.instagram.com/tanveer_mekrani__"
+               target="_blank" rel="noopener noreferrer">
+              Instagram par message ↗
+            </a>
+            <a href="https://x.com/TanveerMekrani1"
+               target="_blank" rel="noopener noreferrer">
+              X par message ↗
+            </a>
+          </div>
+        </details>
+      </div>
+
+      <div class="profile-art"><span>T</span></div>
+    </section>
+
+    <h2 class="section-title">Mujhse judiye</h2>
+
+    <section class="socials">
+      <a class="social-card"
+         href="https://www.instagram.com/tanveer_mekrani__"
+         target="_blank" rel="noopener noreferrer">
+        <strong>Instagram ↗</strong>
+        <span>Photos aur updates dekhein</span>
+      </a>
+
+      <a class="social-card"
+         href="https://x.com/TanveerMekrani1"
+         target="_blank" rel="noopener noreferrer">
+        <strong>X ↗</strong>
+        <span>Mere posts dekhein</span>
+      </a>
+    </section>
+
+    <footer>© 2026 Tanveer · Meri pehli website</footer>
+  </main>
+</body>
+</html>
